@@ -13,9 +13,9 @@ def is_enabled(value, default):
 # Bot information
 
 SESSION = environ.get('SESSION', 'Media_search')
-API_ID = int(environ.get('API_ID', '18466786'))
-API_HASH = environ.get('API_HASH', 'd2ce12c5c963cbb2210a669def0868aa')
-BOT_TOKEN = environ.get('BOT_TOKEN', "6084905112:AAHfBvLSUrhH7wE0ezQSWtU5zVF-xIMaPeg")
+API_ID = int(environ.get('API_ID', '27335730'))
+API_HASH = environ.get('API_HASH', 'ae5a5f660ffdf3e08997d493c32932f5')
+BOT_TOKEN = environ.get('BOT_TOKEN', "6110043034:AAEi_w1qbyaXEbNVJIaGpkyTsk8h_58Bz6I")
 
 # Bot settings
 
@@ -27,23 +27,23 @@ PICS = (environ.get('PICS', 'https://te.legra.ph/file/1d0a2c18fe400858da722.jpg'
 
 # Admins, Channels & Users
 
-ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '1893496887').split()]
-CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '-1001880914188').split()]
+ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '1735392935').split()]
+CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '-1001791493942').split()]
 auth_users = [int(user) if id_pattern.search(user) else user for user in environ.get('AUTH_USERS', '').split()]
 AUTH_USERS = (auth_users + ADMINS) if auth_users else []
-auth_channel = environ.get('AUTH_CHANNEL', '-1001674828759')
+auth_channel = environ.get('AUTH_CHANNEL', '-1001808844900')
 auth_grp = environ.get('AUTH_GROUP')
 AUTH_CHANNEL = int(auth_channel) if auth_channel and id_pattern.search(auth_channel) else None
 AUTH_GROUPS = [int(ch) for ch in auth_grp.split()] if auth_grp else None
 
 # MongoDB information
-DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://EARN:EARN@cluster0.khsles8.mongodb.net/?retryWrites=true&w=majority")
-DATABASE_NAME = environ.get('DATABASE_NAME', "EARN")
+DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://Anantharamu:Anand15112003@cluster0.9smmbwo.mongodb.net/?retryWrites=true&w=majority")
+DATABASE_NAME = environ.get('DATABASE_NAME', "Anantharamu")
 COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Telegram_files')
 
 # Others
 
-LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1001807926932'))
+LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1001661350712'))
 
 SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 'TamilanMoviesChat')
 
@@ -93,4 +93,4 @@ LOG_STR += (f"MAX_LIST_ELM Found, long list will be shortened to first {MAX_LIST
 
 LOG_STR += f"Your current IMDB template is {IMDB_TEMPLATE}"
 
-SHORTNER_API = environ.get("SHORTNER_API", "d7e6bf4c5666744fbcd6aa8ba0a08d4cac41e27a")
+SHORTNER_API = environ.get("SHORTNER_API", "b3d22d25703454eef8279bae349d626177538567")
